@@ -14,7 +14,7 @@ for (let ii = 0; ii < 5; ++ii) {
   queue.add(0, example, [ii])
 }
 const finished = []
-queue.run().then(
+queue.run().then(() => {
   console.log(finished)
 })
 
